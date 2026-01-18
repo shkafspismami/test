@@ -1,15 +1,17 @@
 import time
 
-def hello_func(name):
-    for _ in range(1, 6):
+def timer(seconds):
+    for _ in range(1, seconds+1):
         print(f"{_}...")
         time.sleep(1)
 
+def hello_func(name, seconds = 3):
+    timer(seconds)
     print(f"Hello Everyone! and {name}!")
 
-def bye_func(name):
-
+def bye_func(name, seconds = 3):
+    timer(seconds)
     print (f"Bye Everyone! and {name}")
 
 hello_func("Kenny")
-bye_func("Kenny")
+bye_func("Kenny", 2)
