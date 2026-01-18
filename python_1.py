@@ -7,4 +7,9 @@ def hello_func(name):
 
     print(f"Hello Everyone! and {name}!")
 
+def bye_func(name):
+
+    print (f"Bye Everyone! and {name}")
+
 hello_func("Kenny")
+bye_func("Kenny")
